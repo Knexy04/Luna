@@ -1,0 +1,63 @@
+// SalesPage.module.scss
+.salesPage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .saleCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .salePhoto {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .saleName {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .saleSubtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .salePeriod {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #888;
+  }
+  
+  .saleItems {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .saleItems li {
+    margin: 5px 0;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+    color: red;
+  }
+  

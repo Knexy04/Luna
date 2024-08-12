@@ -1,0 +1,19 @@
+.buttonOff{
+    @apply text-white rounded-3xl font-light bg-black p-3 flex justify-center transition-all items-center hover:bg-opacity-70
+  }
+
+  .itemContainer {
+    /* Additional styles for the item container */
+    animation: fadeInUp 0.5s ease-out; /* Adjust the duration and easing as needed */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

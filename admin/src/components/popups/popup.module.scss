@@ -1,0 +1,30 @@
+$main: #FAD9C9;
+$back: #FFF7ED;
+$textDark: #1a1a1a;
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.popup {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  background: $main;
+  border-radius: 12px;
+  padding: 1rem;
+  font-weight: bold;
+  border: rgba(255, 0, 0, 0.2) 2px solid;
+  animation: fadeInOut 5s;
+}

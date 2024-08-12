@@ -1,0 +1,27 @@
+.collectionsPage {
+    padding: 20px;
+  }
+  
+  .collectionsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .collectionItem {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collectionItem h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .collectionItem p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  

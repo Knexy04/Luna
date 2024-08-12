@@ -1,0 +1,43 @@
+$main: rgba(250, 217, 201, 0.8);
+$back: #FFF7ED;
+$textDark: #1a1a1a;
+
+.header {
+  width: 100vw;
+  background: $main;
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  position: fixed;
+  justify-content: center;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+  overflow-x: auto;
+
+  @media screen and (max-width: 768px) {
+    top: auto;
+    bottom: 0;
+  }
+
+  .headerButton {
+    transition: ease-in-out 0.25s;
+    display: flex;
+    align-items: center;
+    color: $textDark;
+    text-decoration: none;
+    padding: .4rem 1rem;
+    background: $back;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .headerButton:hover {
+    opacity: 0.8;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 20px 0px;
+  }
+}
+
+.main {
+  margin-top: 4rem;
+}

@@ -1,0 +1,186 @@
+.search {
+    @apply rounded-3xl z-50 shadow-md px-3 py-1 transition-all lg:w-96 w-full bg-back flex items-center bg-opacity-70;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 6000;
+}
+
+.search:hover {
+    @apply shadow-zinc-400
+}
+
+.searchinput {
+    @apply w-full bg-transparent
+}
+
+.searchinput:focus {
+    border: 0;
+    outline: 0;
+    @apply shadow-zinc-400
+}
+
+.headerline {
+    @apply w-full lg:flex justify-between items-center bg-main px-12 p-1 h-20 hidden;
+    z-index: 60;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.icon {
+    @apply flex justify-center items-center transition-all
+}
+
+.icon:hover {
+    scale: 110%;
+}
+
+.under {
+    @apply lg:flex justify-center gap-12 py-3 opacity-0 transition-all bg-main hidden
+}
+
+.under a {
+    @apply underline underline-offset-4 decoration-transparent hover:decoration-black transition-all
+}
+
+header:hover .under{
+    @apply opacity-100
+}
+
+.slide {
+    @apply w-full relative select-none
+}
+
+.slide aside {
+    @apply lg:top-0 absolute lg:w-[37%] w-full bottom-0 h-2/5 lg:left-[63%] lg:h-full bg-main bg-opacity-25 p-8 lg:p-12 shadow-xl flex flex-col justify-center gap-6 lg:gap-8;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.slide article {
+    @apply text-3xl font-bold
+}
+
+.slide div {
+    @apply flex flex-col gap-1
+}
+
+.slide a {
+    @apply mx-auto flex justify-between bg-main bg-opacity-70 p-2 rounded-3xl px-6 transition-all hover:bg-opacity-50 w-full lg:w-1/2 shadow-md
+}
+
+.itemrow {
+    @apply  flex gap-4 w-full justify-center sm:justify-start lg:px-24 px-6 md:px-12 h-auto;
+}
+
+.card {
+    @apply flex pb-2 flex-col justify-center w-full gap-4 cursor-pointer transition-all;
+    flex: 1 0 auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.card:hover img{
+    @apply shadow-md
+}
+
+.cardblock {
+    @apply absolute flex flex-col gap-1 top-2 right-2 items-end opacity-100 lg:opacity-0 transition-all z-30;
+}
+
+.card:hover .cardblock {
+    opacity: 1;
+}
+
+.favbutton {
+    @apply bg-black rounded-3xl bg-opacity-80 text-cyan-50 px-4 py-2 text-sm transition-all hover:bg-opacity-70;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.movingline {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(213,217,199);
+    background: linear-gradient(180deg, rgba(213,217,199,1) 0%, rgba(255,247,237,1) 100%);
+}
+
+
+
+.headerIcon {
+    @apply m-2
+}
+
+.underCatalog {
+    @apply justify-center gap-12 py-3 transition-all bg-main flex
+}
+
+.underCatalog a {
+    @apply underline underline-offset-4 decoration-transparent hover:decoration-black transition-all
+}
+.under .catalog:hover + .catalogrow {
+    display: block !important;
+}
+
+.divCard {
+    border-radius: 40px;
+    border: 1.5px solid black;
+    height: 320px; /* Default height for small screens */
+}
+
+@media (min-width: 768px) {
+    .divCard {
+        height: 300px; /* Height for medium and larger screens */
+    }
+}
+.blurdivCard2{
+    height: 300px;
+    border-radius: 40px;
+    border: 1.5px black solid;
+}
+.divCard2{
+    filter: blur(3px);
+    filter:drop-shadow(100%);
+    height: 300px;
+    border-radius: 40px;
+}
+
+.buttonrow{
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 1.5px black solid;
+}
+.textdiv{
+    text-align: left;
+    background-color: rgba(253, 244, 232, 0.555);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1.5px solid black;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.divRounded{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.itemline {
+    @apply flex items-center justify-center absolute bottom-4 w-fit left-1/2 p-2 px-12 lg:px-16 bg-black text-back bg-opacity-80 rounded-2xl overflow-hidden;
+    transform: translateX(-50%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.itemline p {
+    @apply absolute text-3xl opacity-[15%] decoration-2 line-through z-10;
+    filter: blur(0,5px);
+}
+.headerMobile {
+    @apply flex lg:hidden w-full bg-main px-2 fixed bottom-0 h-16 z-50 justify-around items-center;
+}
+
+.menuMobile {
+    @apply fixed flex top-0 transition-all left-0 bg-main bg-opacity-100 z-20 w-full backdrop-blur;
+}

@@ -1,0 +1,94 @@
+
+.cardImgLeft {
+    transition: transform 0.3s ease;
+  }
+  
+  .cardImgLeft:hover {
+    transform: scale(1.1); 
+  }
+
+  .mainPhoto {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .animate {
+    opacity: 0;
+  }
+
+  .buttonOff{
+    @apply text-white rounded-3xl font-light bg-black p-3 flex justify-center transition-all items-center hover:bg-opacity-70
+  }
+
+  .buttonOn{
+    border: 2px black solid;
+    @apply text-black rounded-3xl font-light bg-main p-3 flex justify-center items-center hover:bg-opacity-70
+    
+  }
+  .buttonOffStock{
+    @apply text-white rounded-3xl border-collapse font-light bg-red-200 p-3 flex justify-center transition-all items-center hover:bg-opacity-100 cursor-no-drop
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 769px) {
+    .cardImgLeft {
+      width: 78px;
+      height: 72px;
+    }
+    .cardImgMain{
+      width: 340px;
+      height: 340px;
+    }
+    .itemPhotos{
+      flex-direction: column-reverse !important;
+      display: flex;
+    }
+    .leftPanelPhotos{
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      margin-top: 8px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .cardImgLeft {
+      width: 24%;
+      height: auto;
+    }
+    .imgesMobile{
+      display: block !important;
+    }
+    .cardImgMain{
+      width: 100%;
+      height: auto;
+      margin-bottom: 8px;
+    }
+    .itemPhotos{
+      flex-direction: column-reverse !important;
+      display: flex;
+    }
+    .leftPanelPhotos{
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      margin-top: 4px;
+    }
+    .imagesPc{
+      display: none;
+    }
+  }
+  .imgesMobile{
+    display: none;
+    margin-bottom: 16px;
+  }
+
+
+  .inputdiv {
+    animation: fadeIn ease-in-out 0.5s;
+}
+
+.inputData {
+    @apply w-full bg-main rounded-lg py-1 px-4 transition-all focus:shadow-lg focus:outline-0 placeholder-white hover:shadow-md
+}

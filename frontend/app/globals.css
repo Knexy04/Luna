@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    @apply flex w-screen fixed bottom-0 lg:bottom-auto lg:top-0 left-0 flex-col z-50
+}
+
+main {
+    @apply pt-20
+}
+
+html {
+    @apply bg-back
+}
+
+:root {
+    --swiper-theme-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.page {
+    @apply flex flex-col gap-12 lg:pt-20 pt-0
+}
+
+.sample-slider {
+    background-color: #D5D9C7;
+}
+
+.sample-slider .swiper-wrapper{
+    transition-timing-function: linear !important;
+}
+.sample-slider2 .swiper-wrapper{
+    transition-timing-function: linear !important;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FAD9C9;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.75);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.saleswiper .swiper-button-next,
+.saleswiper .swiper-button-prev {
+    top: 44% !important;
+}
+
+.notFound {
+    @apply blur-sm absolute opacity-5 top-1/2 left-1/2;
+    transform: translate(-50%,-50%) scale(0.5);
+}
+
+.backblur {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}

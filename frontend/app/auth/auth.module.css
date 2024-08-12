@@ -1,0 +1,11 @@
+.input {
+    @apply rounded-xl focus:outline-0 px-4 py-1 w-full bg-back h-10 hover:bg-opacity-70 focus:bg-opacity-70 transition-all
+}
+
+.inputrow {
+    @apply flex-col flex
+}
+
+.inputrow label {
+
+}

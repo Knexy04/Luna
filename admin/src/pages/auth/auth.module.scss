@@ -1,0 +1,85 @@
+$main: #FAD9C9;
+$back: #FFF7ED;
+$textDark: #1a1a1a;
+
+@keyframes drag {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(2%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  30% {
+    transform: translateX(-2%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+}
+
+.page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.authBlock {
+  border-radius: 20px;
+  background: $main;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em
+}
+
+.inputBlock label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inputBlock input {
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  padding: 4px 8px;
+  width: 24rem;
+  height: 2rem;
+  font-size: 16px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.inputBlock input:hover, .inputBlock input:focus {
+  background: rgba(255, 247, 237, 0.9);
+}
+
+.authBlock button {
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  background: $textDark;
+  color: $back;
+  font-weight: 500;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.authBlock button:disabled {
+  opacity: 70%;
+}
+
+
+.error {
+  animation: drag 0.25s;
+}

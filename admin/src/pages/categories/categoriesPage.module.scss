@@ -1,0 +1,51 @@
+.container {
+  padding: 0 3.25rem;
+  padding-top: 2rem;
+}
+
+.category {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .subcategories {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .subcategories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .subcategories li {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .addCategoryButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+  }
+  
+  .addCategoryButton:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+  }
+  
